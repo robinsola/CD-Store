@@ -21,8 +21,19 @@
         <br>
         <textarea #newDescription></textarea>
       </div>
-      <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+
+      <div>
+        <label>Image Url:</label>
+        <br>
+        <input #newUrl>
+      </div>
+
+      <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newUrl.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newUrl.value=''">Add</button>
 
     </div>
   </div>
+</div>
+
+<div>
+  <app-marketplace></app-marketplace>
 </div>
